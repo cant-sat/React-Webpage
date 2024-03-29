@@ -1,3 +1,4 @@
+import { TopBar } from "./Topbar"
 
 
 function App() :JSX.Element {
@@ -6,7 +7,7 @@ function App() :JSX.Element {
   return (
     <body >
 
-      <div className="text-5xl">Hello World</div>
+      <TopBar/>
       
     </body>
   )
