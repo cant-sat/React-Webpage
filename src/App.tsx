@@ -31,7 +31,7 @@ function App({title, content = Err, top} : PageSettings) :JSX.Element {
 
       <TopBar/>
       
-      <div className="overflow-auto bg-slate-500 font-">
+      <div className="overflow-auto bg-slate-500">
       
     {content}
       </div>
@@ -44,10 +44,17 @@ function App({title, content = Err, top} : PageSettings) :JSX.Element {
 function Top(content : React.ReactNode) : JSX.Element{
   if(content){
     return <>     {content}
-  <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl"/></>
+  <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl rounded-full iconButton hover:cursor-pointer" onClick={scrollDown} title="Scroll down!"/></>
   }
 
   return <></>
+}
+
+function scrollDown(){
+  window.scrollTo({
+    top: 1000,
+    behavior: "smooth"
+  })
 }
 
 export default App
