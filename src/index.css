@@ -4,7 +4,7 @@
 
 @layer components {
     .iconButton {
-        @apply p-2 m-2 transition-all duration-300 rounded-xl hover:bg-orange-400 hover:text-slate-900;
+        @apply p-2 m-2 text-6xl transition-all duration-300 rounded-xl hover:bg-orange-400 hover:text-slate-900;
     }
 }
 

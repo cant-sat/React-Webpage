@@ -43,11 +43,15 @@ function App({ title, content = Err, top }: PageSettings): JSX.Element {
 
 function Top(content: React.ReactNode): JSX.Element {
   const scrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight, // Scroll down by 100vh
-      behavior: "smooth"
-    });
-  };
+    const topBarElement = document.getElementById('TopBar');
+    if (topBarElement) {
+        const topBarPosition = topBarElement.getBoundingClientRect().top;
+        window.scrollTo({
+            top: window.pageYOffset + topBarPosition, // Scrolls to the top of the TopBar element
+            behavior: "smooth"
+        });
+    }
+};
 
 
   if (content) {

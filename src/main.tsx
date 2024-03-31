@@ -10,9 +10,8 @@ import projects from './pages/projects.tsx'
 import live from './pages/live.tsx'
 
 const pages: { path: string, element: React.ReactNode, title?: string, top? : React.ReactNode }[] = [
-  { path: "/", element: index(), top:  <div className="min-h-screen text-orange-400 flex place-content-center text-[30vw] items-center border-slate-400 border-b-2">
+  { path: "/", element: index(), top:  <div className="select-none min-h-[101vh] text-orange-400 flex place-content-center text-[30vw] items-center border-slate-400 border-b-2">
   CAN'T
-  
 </div> },
   { path: "About", element: about()},
   { path: "Projects", element: projects()},
