@@ -1,3 +1,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+    .iconButton {
+      @apply  p-2 transition-all rounded-xl hover:bg-orange-400 hover:text-slate-900;
+    }
+  }

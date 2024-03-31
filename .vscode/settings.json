@@ -16,8 +16,9 @@
     "postcss.config.js": true,
     "tsconfig.json": true,
     "tsconfig.node.json": true,
-    "docs": false,
-    ".vscode": true
+    "docs": true,
+    ".vscode": true,
+    "LICENSE": true
   },
   "explorerExclude.backup": {}
 }
