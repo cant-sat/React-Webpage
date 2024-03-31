@@ -25,7 +25,7 @@ function App({ title, content = Err, top }: PageSettings): JSX.Element {
   })
 
   return (
-    <body className="no-scrollbar">
+    <body>
 
       {Top(top)}
 
@@ -56,7 +56,7 @@ function Top(content: React.ReactNode): JSX.Element {
 
   if (content) {
     return <>     {content}
-      <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl rounded-full iconButton hover:cursor-pointer" onClick={scrollDown} title="Scroll down!" /></>
+      <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl rounded-full iconButton hover:cursor-pointer" onClick={scrollDown} title="Scroll down!"/></>
   }
 
   return <></>
