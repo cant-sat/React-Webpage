@@ -16,16 +16,25 @@ function App({title, content = Err} : PageSettings) :JSX.Element {
     }
   })
 
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+
   return (
-    <body >
+    <body>
 
 
       <TopBar/>
       
-      {content}
+      <div className="overflow-auto bg-slate-500">
+      {[...Array(10000)].map(() =>
+    content )}
+      </div>
 
     </body>
   )
 }
+
 
 export default App

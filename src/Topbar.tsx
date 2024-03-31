@@ -8,9 +8,9 @@ export function TopBar() {
         <a href="/#">
             <PiPlaceholderBold className="size-16 iconButton"/>
         </a>
-        <div className="flex flex-1 transition-all place-content-center *:text-slate-900 *:max-w-[17rem] *:flex-1">
+        <div className="flex flex-1 transition-all place-content-center text-slate-900 ">
             {buttons.map((item) => (
-                <a href={"/#" + item} className=" py-[0.3rem] mx-1 text-center transition-all bg-orange-400 hover:max-w-[25rem] rounded-2xl">{item}</a>))}
+                <a href={"/#" + item} className=" py-[0.3rem] mx-1 text-center transition-all bg-orange-400 hover:max-w-[25rem] rounded-2xl flex-1 max-w-[17rem]">{item}</a>))}
         </div>
         <a href="https://github.com/cant-sat">
             <FaGithub className="size-16 iconButton"/>
