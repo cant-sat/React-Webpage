@@ -1,11 +1,18 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer components {
-    .iconButton {
-        @apply p-2 m-2 text-6xl transition-all duration-300 rounded-xl hover:bg-orange-400 hover:text-slate-900;
-    }
+  .iconButton {
+    @apply p-2 m-2 text-6xl transition-all duration-300 rounded-xl hover:bg-orange-400 hover:text-slate-900;
+  }
+
+  .basicButton {
+    @apply bg-slate-900 text-orange-400 py-1 px-3 rounded-full hover:px-5 transition-all text-center mx-4 hover:mx-2
+        active:bg-orange-400 active:text-slate-900 active:mx-1   active:px-6 active:py-0.5 duration-300 active:my-0.5;
+  }
+
+  .textInput {
+    @apply p-0.5 px-2 rounded-xl w-[16rem];
+  }
 }
-
-

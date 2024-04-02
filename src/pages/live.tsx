@@ -1,18 +1,19 @@
-import Konami from 'react-konami-code';
+import Konami from "react-konami-code";
+import DeveloperPanel from "../cantAPI/devPanel";
 
-function live(){
+function live() {
 
 
-    return(
-        <>LIVE<Konami>
-          {"dev panel"}
-        </Konami>
-        </>
-        )
-      
-    
-
+  return (
+    <div className="m-2">
+      LIVE
+      <Konami>
+        <DeveloperPanel />
+      </Konami>
+    </div>
+  );
 }
 
 
-export default live
+
+export default live;
