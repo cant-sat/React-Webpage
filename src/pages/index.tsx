@@ -1,11 +1,11 @@
 
 function index() {
-    let content = <> <br/>Index </>;
+
     return (
         <>
             {Array.from({length: 100}, (_, i) =>
                 <>
-                    {content} {i + 1}
+                    Index {i + 1} <br />
                 </>
             )}
         </>
