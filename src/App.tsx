@@ -45,18 +45,18 @@ function Top(content: React.ReactNode): JSX.Element {
   const scrollDown = () => {
     const topBarElement = document.getElementById('TopBar');
     if (topBarElement) {
-        const topBarPosition = topBarElement.getBoundingClientRect().top;
-        window.scrollTo({
-            top: window.pageYOffset + topBarPosition, // Scrolls to the top of the TopBar element
-            behavior: "smooth"
-        });
+      const topBarPosition = topBarElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: window.pageYOffset + topBarPosition, // Scrolls to the top of the TopBar element
+        behavior: "smooth"
+      });
     }
-};
+  };
 
 
   if (content) {
     return <>     {content}
-      <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl rounded-full iconButton hover:cursor-pointer" onClick={scrollDown} title="Scroll down!"/></>
+      <MdKeyboardDoubleArrowDown className="absolute bottom-[3vh] text-orange-400 right-[3vw] text-8xl rounded-full iconButton hover:cursor-pointer" onClick={scrollDown} title="Scroll down!" /></>
   }
 
   return <></>

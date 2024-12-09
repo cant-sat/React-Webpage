@@ -1,7 +1,7 @@
 import Konami from "react-konami-code";
 import DeveloperPanel from "../cantAPI/devPanel";
 
-function live() {
+function Live() {
 
 
   return (
@@ -16,4 +16,4 @@ function live() {
 
 
 
-export default live;
+export default Live;

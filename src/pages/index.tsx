@@ -1,5 +1,5 @@
 
-function index() {
+function Index() {
 
     return (
         <>
@@ -13,4 +13,4 @@ function index() {
 }
 
 
-export default index
+export default Index

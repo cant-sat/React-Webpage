@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-function about(){
+function About(){
     return (<div className="min-h-screen">
         <div className="underline text-5xl text-center m-8">Members</div>
         <div className="flex flex-wrap place-content-center">
@@ -22,4 +22,4 @@ export function MemberCard({ children } : CardProps) : ReactNode {
 }
 
 
-export default about
+export default About

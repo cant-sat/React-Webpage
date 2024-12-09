@@ -15,7 +15,7 @@ let buttons : {path : string, description : string, element? : React.ReactNode}[
 
 
 export function TopBar() {
-    return <div className="flex bg-slate-900  h-14 items-center place-content-center text-orange-400  *:transition-all text-xl sticky  top-0 z-10" id="TopBar">
+    return <div className="flex bg-slate-800  h-14 items-center place-content-center text-orange-400  *:transition-all text-xl sticky  top-0 z-10" id="TopBar">
         <a href="#">
             <PiPlaceholderBold className="ml-2 mr-1 iconButton"/>
         </a>
