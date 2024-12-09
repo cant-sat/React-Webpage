@@ -27,7 +27,7 @@ function message(ev : MessageEvent<any>){
 }
 
 function open(ev : Event) {
-
+    console.log(ev)
 }
 
 export default connect

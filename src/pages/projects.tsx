@@ -26,7 +26,7 @@ function Projects() {
           <div className="mb-16 text-3xl font-medium">
             Our relation to CanSat
           </div>
-          <div className="flex-col text-justify w-[35vw] h-[30vh] text-xl">
+          <div className="flex-col text-justify w-[35vw] h-[30vh] text-2xl">
             The whole CAN'T has a lot of connection with CanSat, we initially
             signed up to CanSat under the name CAN'T but then we just decided
             our other projects are related enough to just be under the same
