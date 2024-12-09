@@ -25,18 +25,18 @@ function App({ title, content = Err, top }: PageSettings): JSX.Element {
   })
 
   return (
-    <body>
+    <>
 
       {Top(top)}
 
       <TopBar />
 
-      <div className="overflow-auto bg-slate-500">
+      <div className="overflow-y-scroll overflow-x-hidden bg-slate-500 max-h-[calc(100vh-3.5rem)]">
 
         {content}
       </div>
 
-    </body>
+    </>
   )
 }
 

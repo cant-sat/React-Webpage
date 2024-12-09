@@ -15,4 +15,25 @@
   .textInput {
     @apply p-0.5 px-2 rounded-xl w-[16rem];
   }
+
+  .centerContent{
+    @apply flex items-center justify-center;
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #fb923c;
+  border-radius: 2px;
 }
