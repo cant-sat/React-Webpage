@@ -3,7 +3,7 @@ import { MdOutlineSatelliteAlt } from "react-icons/md";
 
 function Projects() {
   return (
-    <div className="*:min-h-[calc(100vh-10.5rem)] *:flex-auto *:w-[calc(100vw-7rem)] *:m-[3.5rem] *:p-5 *:border-2 *:rounded-xl *:bg-slate-600 *:border-slate-700 text-slate-200 text-center flex flex-col items-center justify-center">
+    <div className="*:min-h-[calc(100vh-3.5rem-6vw)] *:flex-auto *:w-[calc(94vw)] *:m-[3vw] *:p-5 *:border-2 *:rounded-xl *:bg-slate-600 *:border-slate-700 text-slate-200 text-center flex flex-col items-center justify-center">
       <div className="grid grid-rows-10 grid-cols-10">
         <div className="col-span-10 border-b-2 border-slate-400 mx-24 centerContent text-4xl font-medium font-mono tracking-widest">
           CanSat <MdOutlineSatelliteAlt className="inline mx-5 text-5xl" />

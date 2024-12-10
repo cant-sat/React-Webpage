@@ -31,7 +31,7 @@ function App({ title, content = Err, top }: PageSettings): JSX.Element {
 
       <TopBar />
 
-      <div className="overflow-y-scroll overflow-x-hidden bg-slate-500 max-h-[calc(100vh-3.5rem)]">
+      <div className="overflow-y-visible bg-slate-500">
 
         {content}
       </div>
